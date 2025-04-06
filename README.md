@@ -1,7 +1,7 @@
 # A²Heritage IFC data library
 The A²Heritage data library uses the IFC 4X3 schema and promotes the use of openBIM and open-source frameworks in Cultural Heritage (CH). As a lack of standardized data libraries for Heritage Building Information Modeling (HBIM), A²Heritage is intended to be used and extended, following the original approach, for all BIM users.
 
-It has been developed during the PhD Thesis of __________ at _________ University (______) for use in architectural and archaeological heritage under the HBIM methodology. Professors _________ and _________ have contributed to this approach as co-supervisors of this research.
+The library and HBIM Project template proposal have been developed during the PhD Thesis of __________ at _________ University (______) for its use in architectural and archaeological heritage under the HBIM methodology. Professors _________ and _________ have contributed to this approach as co-supervisors of this research.
 
 The library enables the metadata integration of different approaches and CH requirements:
 
