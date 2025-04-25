@@ -1,1 +1,1 @@
-Add description
+Associated with the large number of 3D objects, generated with the Scan-to-MesHBIM method, a multi-object import option has been created.
