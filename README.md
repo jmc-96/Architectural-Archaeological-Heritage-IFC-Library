@@ -2,13 +2,17 @@
 
 ## **:arrow_forward: Introduction**
 
-The *A²Heritage* data library uses the IFC 4X3 schema and promotes the use of openBIM and open-source frameworks in cultural heritage. Due to a lack of standardized data libraries for Heritage Building Information Modeling (HBIM), *A²Heritage* is intended to be used and extended by all BIM users. The structure introduced mapped concepts of the CIDOC-CRM ontology, specifically its extension CRM-ba created for the building archaeology approach.
+The *A²Heritage* data library uses the IFC 4X3 schema and promotes the use of openBIM and open-source frameworks in cultural heritage. Due to a lack of standardized data libraries for Heritage Building Information Modeling (HBIM), *A²Heritage* is intended to be used and extended by all BIM users. The structure introduced mapped concepts of the CIDOC-CRM ontology, specifically its extension CRM-ba created for the building archaeology approach, as tag.
 
 The library has been developed during the PhD Thesis of Jesús Muñoz Cádiz at the Polytechnic University of Marche (Italy) for application in architectural and archaeological heritage under the HBIM methodology.
 
 ## **:arrow_forward: Architectural Analysis**
 
 Ontological models related to historical buildings, vaulted systems, and building archaeology, within the Getty Thesaurus and vocabularies (AAT), are used to semantically represent and describe building elements.
+
+- **IfcSlaType** for representing the intrados of a vault net.
+- **IfcSpaceType:** Servant and served spaces for specific buildings i.e. a Roman Theater; vaulted room/bay space for specific spaces covered with a historic vaulted system. 
+- **IfcWallType:** brick and rubble masonry have been already integrated.
 
 ## **:arrow_forward: Historical Analysis**
 
