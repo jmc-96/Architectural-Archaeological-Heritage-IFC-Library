@@ -12,7 +12,9 @@ Ontological models related to historical buildings, vaulted systems, and buildin
 - **IfcSpaceType:** Servant and served spaces for specific buildings, i.e., a Roman Theater; vaulted room/bay space for specific spaces covered with a historic vaulted system. 
 - **IfcWallType:** Brick and rubble masonry have already been integrated in this list.
 
-![image alt](https://github.com/jmc-96/Architectural-Archaeological-Heritage-IFC-Data-Library/blob/main/Images/Figure%34.HBIM_Vault.png?raw=true)
+An example is represented in the following image, used in [Muñoz-Cádiz et al., 2024]([https://iris.univpm.it/handle/11566/340734](https://rivistatema.com/scan-to-meshbim-implementing-knowledge-about-historical-vaulted-ceilings-with-open-tools/)).
+![HBIM vault](https://github.com/jmc-96/Architectural-Archaeological-Heritage-IFC-Data-Library/blob/main/Images/Figure%2034.%20HBIM_Vault.png?raw=true)
+
 
 
 ## **📍 Historical Analysis**
