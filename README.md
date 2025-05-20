@@ -6,13 +6,13 @@ The *A²Heritage* data library uses the IFC 4X3 schema and promotes the use of o
 
 The library has been developed during the PhD Thesis of Jesús Muñoz Cádiz at the Polytechnic University of Marche (Italy) for application in architectural and archaeological heritage under the HBIM methodology.
 
-## **:arrow_forward: Architectural Analysis**
+## **📍 Architectural Analysis**
 
 Ontological models related to historical buildings, vaulted systems, and building archaeology, within the Getty Thesaurus and vocabularies (AAT), are used to semantically represent and describe building elements.
 
-- **IfcSlaType** for representing the intrados of a vault net.
-- **IfcSpaceType:** Servant and served spaces for specific buildings i.e. a Roman Theater; vaulted room/bay space for specific spaces covered with a historic vaulted system. 
-- **IfcWallType:** brick and rubble masonry have been already integrated.
+- **IfcSlaType** This object type is used to represent the intrados of a vault net.
+- **IfcSpaceType:** Servant and served spaces for specific buildings, i.e., a Roman Theater; vaulted room/bay space for specific spaces covered with a historic vaulted system. 
+- **IfcWallType:** Brick and rubble masonry have already been integrated in this list.
 
 ## **:arrow_forward: Historical Analysis**
 
