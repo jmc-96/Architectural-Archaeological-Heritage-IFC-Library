@@ -14,11 +14,11 @@ Ontological models related to historical buildings, vaulted systems, and buildin
 - **IfcSpaceType:** Servant and served spaces for specific buildings, i.e., a Roman Theater; vaulted room/bay space for specific spaces covered with a historic vaulted system. 
 - **IfcWallType:** Brick and rubble masonry have already been integrated in this list.
 
-## **:arrow_forward: Historical Analysis**
+## **📍 Historical Analysis**
 
 *Description to be added.*
 
-## **:arrow_forward: Decay Analysis**
+## **📍 Decay Analysis**
 
 The library highlights the use of **IfcSurfaceFeature** (with the “USERDEFINED” option) to represent decay-analyzed surfaces. This can be enriched by the PropertySet template **“Decay – Report (E73 Information Object)”**, containing:
 - **Decay** (E3 Condition State)  
