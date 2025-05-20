@@ -34,3 +34,5 @@ The library highlights the use of **IfcSurfaceFeature** (with the “USERDEFINED
 
 Architectural intervention requirements are covered, including refurbishing, restorative conservation, renovation, adaptive reuse, preservation, rehabilitation, and retrofitting. Datasheets can include facility name, discipline, inspection item, inspection method, inspection cycle, expected service life, and more.
 
+*To be extended*
+
