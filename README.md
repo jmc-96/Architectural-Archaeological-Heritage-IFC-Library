@@ -2,9 +2,9 @@
 
 ## **:arrow_forward: Introduction**
 
-The *A²Heritage* data library uses the IFC 4X3 schema and promotes the use of openBIM and open-source frameworks in Cultural Heritage (CH). Due to a lack of standardized data libraries for Heritage Building Information Modeling (HBIM), *A²Heritage* is intended to be used and extended by all BIM users.
+The *A²Heritage* data library uses the IFC 4X3 schema and promotes the use of openBIM and open-source frameworks in cultural heritage. Due to a lack of standardized data libraries for Heritage Building Information Modeling (HBIM), *A²Heritage* is intended to be used and extended by all BIM users. The structure introduced mapped concepts of the CIDOC-CRM ontology, specifically its extension CRM-ba created for the building archaeology approach.
 
-The library has been developed during the PhD Thesis of Jesús Muñoz Cádiz at the Polytechnic University of Marche (Italy) for application in architectural and archaeological heritage under the HBIM methodology. Professors _________ and _________ have contributed to this approach as co-supervisors of the research.
+The library has been developed during the PhD Thesis of Jesús Muñoz Cádiz at the Polytechnic University of Marche (Italy) for application in architectural and archaeological heritage under the HBIM methodology.
 
 ## **:arrow_forward: Architectural Analysis**
 
