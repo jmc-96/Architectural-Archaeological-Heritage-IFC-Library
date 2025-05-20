@@ -32,7 +32,7 @@ The library highlights the use of **IfcSurfaceFeature** (with the “USERDEFINED
 - **Last Intervention Date** (E11 Modification)  
 - **Affected Building Component** (B3 FMBS)
 
-## **:arrow_forward: Facility Management (FM)**
+## **📍 Facility Management (FM)**
 
 Architectural intervention requirements are covered, including refurbishing, restorative conservation, renovation, adaptive reuse, preservation, rehabilitation, and retrofitting. Datasheets can include facility name, discipline, inspection item, inspection method, inspection cycle, expected service life, and more.
 
