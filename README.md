@@ -39,8 +39,10 @@ The library highlights the use of **IfcSurfaceFeature** (with the “USERDEFINED
 
 Architectural intervention requirements are covered by the library. These 4D aspects include refurbishing, restorative conservation, renovation, adaptive reuse, preservation, rehabilitation, and retrofitting. Datasheets can include facility name, discipline, inspection item, inspection method, inspection cycle, expected service life, and more.
 
-⬇️ The next figures show, in this case, specific cases of FM in HBIM. This content has been presented in [Muñoz-Cádiz et al., 2025](https://www.sciencedirect.com/science/article/pii/S2212054825000335?via%3Dihub#sec3):
+⬇️ The next figures show, in this case, specific cases of FM in HBIM. This content is part of the research presented in [Muñoz-Cádiz et al., 2025](https://www.sciencedirect.com/science/article/pii/S2212054825000335?via%3Dihub#sec3).
 
+First, an example in the Roman Theater of Hadrianopolis (Albania), where the HBIM project is based on spatial analysis for building reuse:
 ![Hadrianopolis_HBIM](https://github.com/jmc-96/Architectural-Archaeological-Heritage-IFC-Data-Library/blob/main/Images/Figure%2046.%20Hadrianopolis_results.png?raw=true)
 
+Second, how specific 4D aspects are represented through IFC mapped with CIDOC-CRM:
 ![IFCSchemaCIDOC](https://github.com/jmc-96/Architectural-Archaeological-Heritage-IFC-Data-Library/blob/main/Images/Figure%207.png?raw=true)
