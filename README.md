@@ -43,4 +43,4 @@ Architectural intervention requirements are covered by the library. These 4D asp
 
 ![Hadrianopolis_HBIM](https://github.com/jmc-96/Architectural-Archaeological-Heritage-IFC-Data-Library/blob/main/Images/Figure%2046.%20Hadrianopolis_results.png?raw=true)
 
-
+![IFCSchemaCIDOC](https://github.com/jmc-96/Architectural-Archaeological-Heritage-IFC-Data-Library/blob/main/Images/Figure%207.png?raw=true)
