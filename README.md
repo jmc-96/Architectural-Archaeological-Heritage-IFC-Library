@@ -12,26 +12,26 @@ Ontological models related to historical buildings, vaulted systems, and buildin
 - **IfcSlabType:** This object type is used to represent the intrados of a vault net.
 - **IfcSpaceType:** The current version of the library includes different tailored spaces for cultural heritage:
  
-  - Servant and served spaces for specific buildings, i.e., a Roman Theater;
+  - Servant and served spaces for specific buildings, for example, a Roman Theater;
     
   - Vaulted room/bay space for specific spaces covered with a historic vaulted system.
     
 - **IfcWallType:** Brick and rubble masonry have already been integrated in this list.
 
-As you can imagine, a long list of *IfcobjectType* is required to cover the complexity and variety of cultural heritage assets.
+As you can imagine, a long list of *IfcObjectType* is required to cover the complexity and variety of cultural heritage assets.
 
-⬇️ An example of these developed IfcObjectType is represented in the following image, developed as a figure for the paper presented in [Muñoz-Cádiz et al., 2024](https://rivistatema.com/scan-to-meshbim-implementing-knowledge-about-historical-vaulted-ceilings-with-open-tools/), where a vaulted system of the Urbino Ducal Palace (Italy) is enriched with our data library:
+⬇️ An example is represented in the following image, developed as a figure for the paper presented in [Muñoz-Cádiz et al., 2024](https://rivistatema.com/scan-to-meshbim-implementing-knowledge-about-historical-vaulted-ceilings-with-open-tools/), where a vaulted system of the Urbino Ducal Palace (Italy) is enriched with our data library:
 
 ![HBIM vault](https://github.com/jmc-96/Architectural-Archaeological-Heritage-IFC-Data-Library/blob/main/Images/Figure%2034.%20HBIM_Vault.png?raw=true)
 
 
 ## **📍 Historical Analysis**
 
-*This section is under construction*
+*This section is under development*
 
 ## **📍 Decay Analysis**
 
-The library highlights the use of **IfcSurfaceFeature** (with the “USERDEFINED” option) to represent decay-analyzed surfaces. This can be enriched by the PropertySet template **“Decay – Report (E73 Information Object)”**, containing:
+The library highlights the use of **IfcSurfaceFeature** (with the “USERDEFINED” option) to represent decay-analyzed surfaces. This can be enriched by the PropertySet template **“Decay – Report (E73 Information Object)”**, containing the following properties mapped with CIDOC-CRM entities:
 - **Decay** (E3 Condition State)  
 - **Cause** (E5 Event)  
 - **Monitoring** (E7 Activity)  
