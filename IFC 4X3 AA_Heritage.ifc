@@ -1,7 +1,7 @@
 ISO-10303-21;
 HEADER;
 FILE_DESCRIPTION(('ViewDefinition[DesignTransferView]'),'2;1');
-FILE_NAME('IFC 4X3 AA_Heritage.ifc','2025-05-20T22:18:29+02:00',('Jesus Munoz-Cadiz','munozcadizjesus@gmail.com'),('',''),'IfcOpenShell 0.8.2','Bonsai 0.8.2','Nobody');
+FILE_NAME('IFC4X3_AA_Heritage.ifc','2025-05-20T22:18:29+02:00',('Jesus Munoz-Cadiz','munozcadizjesus@gmail.com'),('',''),'IfcOpenShell 0.8.2','Bonsai 0.8.2','Nobody');
 FILE_SCHEMA(('IFC4X3_ADD2'));
 ENDSEC;
 DATA;
