@@ -4,7 +4,7 @@
 
 The *A²Heritage* data library uses the IFC 4X3 schema and promotes openBIM and open-source frameworks in cultural heritage. Due to a lack of standardized data libraries for **Heritage Building Information Modeling (HBIM)**, *A²Heritage* is intended to be used and extended by all BIM users. For this reason, we are working to provide scientific and professional feedback to be used in future versions of BIM software. 
 
-Concepts of the **CIDOC-CRM** ontology are mapped into the (i) IFC schema and the (ii) customized IfcPropertySet included in the library. Specifically, the extension CRM-ba, created for the building archaeology approach, is stressed.
+Concepts of the **CIDOC-CRM** ontology are mapped into the (i) IFC schema and the (ii) customized IfcPropertySetTemplate included in the library. Specifically, the extension CRM-ba, created for the building archaeology approach, is stressed.
 ## **📍 Architectural Analysis**
 
 Ontological models related to historical buildings, vaulted systems, and building archaeology, within the Getty Thesaurus and vocabularies (AAT), are used to semantically represent and describe building elements. Just to use some examples:
