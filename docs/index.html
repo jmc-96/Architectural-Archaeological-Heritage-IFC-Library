@@ -14,7 +14,8 @@
       </div>
 
       <div class="controls">
-        <input id="search" type="search" placeholder="Search class (e.g., IfcSpace)..." />
+        <label for="search" class="sr-only">Search IFC class</label>
+        <input id="search" type="search" placeholder="Search class (e.g., IfcSpace)..." aria-label="Search IFC class" autocomplete="off" />
         <button id="resetBtn" title="Reset to roots">Reset</button>
       </div>
     </header>
@@ -25,7 +26,7 @@
           <div class="tree-toolbar">
             <button id="toggleAllBtn" class="tree-toggle-btn">Expand All</button>
           </div>
-          <div class="treeContent" id="treeContent"></div>
+          <div class="treeContent" id="treeContent" role="tree" aria-label="IFC Class Hierarchy"></div>
         </main>
       </div>
 
@@ -50,6 +51,7 @@
       </aside>
     </div>
 
-    <script src="app.js"></script>
+    <noscript><p style="padding:16px">This application requires JavaScript.</p></noscript>
+    <script type="module" src="main.js"></script>
   </body>
 </html>

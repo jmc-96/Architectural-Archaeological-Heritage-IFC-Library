@@ -1,8 +1,11 @@
 /**
- * IFC Class Browser – Hierarchy Tree
- * - Loads schema.json
- * - Renders a collapsible hierarchy tree
- * - Inspector sidebar with full metadata
+ * This file has been refactored into ES modules.
+ * Entry point: main.js
+ * Modules:     modules/state.js, modules/schema.js, modules/inspector.js,
+ *              modules/tree.js, modules/search.js, modules/utils.js
+ *
+ * index.html now loads main.js via <script type="module">.
+ * This file is no longer referenced and is kept only for git history.
  */
 
 const elInspector = document.getElementById("inspectorContent");
