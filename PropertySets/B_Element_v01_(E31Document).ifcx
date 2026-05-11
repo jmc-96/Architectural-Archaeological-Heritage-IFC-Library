@@ -1,0 +1,369 @@
+{
+  "type": "ifcJSON",
+  "dataVersion": "1.0.0",
+  "schemaIdentifier": "IFC5",
+  "header": {
+    "description": "ViewDefinition[DesignTransferView]",
+    "implementationLevel": "2;1",
+    "name": "B_Element_v01_(E31Document).ifcjson",
+    "timeStamp": "2026-02-20T00:00:00+01:00",
+    "author": [],
+    "organization": [],
+    "originatingSystem": "IFC5 Heritage Library"
+  },
+  "schemas": {
+    "bsi::ifc::v5a": {
+      "uri": ""
+    }
+  },
+  "data": [
+    {
+      "type": "IfcPropertySetTemplate",
+      "globalId": "1mNHCJLNDEE8vP9QqY_I_C",
+      "name": "BElement_VaultNet_(E73 Information Object)",
+      "description": "Information related to the web-net",
+      "templateType": "PSET_TYPEDRIVENONLY",
+      "applicableEntity": "IfcSlab,IfcSlabType",
+      "hasPropertyTemplates": [
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "2hQgmyh2973AXTluQNFyBh",
+          "name": "Dating",
+          "description": "When it was built",
+          "templateType": "P_SINGLEVALUE",
+          "primaryMeasureType": "IfcTime",
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "2QdWVnTsv73g_931sW6IYm",
+          "name": "Style",
+          "description": "Artistic style used",
+          "templateType": "P_ENUMERATEDVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "enumerators": {
+            "type": "IfcPropertyEnumeration",
+            "name": "Style",
+            "enumerationValues": [
+              { "type": "IfcLabel", "value": "Islamic" },
+              { "type": "IfcLabel", "value": "Roman" },
+              { "type": "IfcLabel", "value": "Romanesque" },
+              { "type": "IfcLabel", "value": "Paleo-christian" },
+              { "type": "IfcLabel", "value": "Gothic" },
+              { "type": "IfcLabel", "value": "Renaissance" },
+              { "type": "IfcLabel", "value": "Baroque" },
+              { "type": "IfcLabel", "value": "Neoclassical" }
+            ]
+          },
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "2g5mLBc6j1PgEaeYWAPg1R",
+          "name": "Constituent Components",
+          "description": "Divided into Structural (S) and Decorative (D)",
+          "templateType": "P_ENUMERATEDVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "enumerators": {
+            "type": "IfcPropertyEnumeration",
+            "name": "Constituent Components",
+            "enumerationValues": [
+              { "type": "IfcLabel", "value": "Ribs (S)" },
+              { "type": "IfcLabel", "value": "Lunettes (S)" },
+              { "type": "IfcLabel", "value": "Web (S)" },
+              { "type": "IfcLabel", "value": "Moulding (D)" },
+              { "type": "IfcLabel", "value": "Archivolts (D)" },
+              { "type": "IfcLabel", "value": "Plaster/painted layers (D)" }
+            ]
+          },
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "0vegRHVtH1NftW00u20XIN",
+          "name": "Geometrical shape",
+          "templateType": "P_ENUMERATEDVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "enumerators": {
+            "type": "IfcPropertyEnumeration",
+            "name": "Geometrical shape",
+            "enumerationValues": [
+              { "type": "IfcLabel", "value": "Semi-circular arch" },
+              { "type": "IfcLabel", "value": "Segmental arch" },
+              { "type": "IfcLabel", "value": "Pointed arch" },
+              { "type": "IfcLabel", "value": "Oval arch" }
+            ]
+          },
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "0aGvG3JjLDLwjCSF35wU26",
+          "name": "Net Distribution",
+          "templateType": "P_ENUMERATEDVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "enumerators": {
+            "type": "IfcPropertyEnumeration",
+            "name": "Net Distribution",
+            "enumerationValues": [
+              { "type": "IfcLabel", "value": "Quadripartite" },
+              { "type": "IfcLabel", "value": "Sexpartite" },
+              { "type": "IfcLabel", "value": "Star-Five Keystones" }
+            ]
+          },
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "2nDNcriDL4yPicA6HfDq0y",
+          "name": "Vault Shape",
+          "templateType": "P_ENUMERATEDVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "enumerators": {
+            "type": "IfcPropertyEnumeration",
+            "name": "Vault Shape",
+            "enumerationValues": [
+              { "type": "IfcLabel", "value": "Square" },
+              { "type": "IfcLabel", "value": "Rectangular" },
+              { "type": "IfcLabel", "value": "Trapezoidal" }
+            ]
+          },
+          "accessState": "READWRITE"
+        }
+      ]
+    },
+    {
+      "type": "IfcPropertySetTemplate",
+      "globalId": "1fxu9tSp59zA6ofqHDNi9X",
+      "name": "BE_VaultPerimetralArch_(E73 Information Object)",
+      "description": "PropertySet for the perimetral arches in a vaulted System",
+      "templateType": "PSET_OCCURRENCEDRIVEN",
+      "applicableEntity": "IfcElementAssembly",
+      "hasPropertyTemplates": [
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "053eYyul1BERf5uRIJSGqu",
+          "name": "Architectural Elem.",
+          "templateType": "P_ENUMERATEDVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "enumerators": {
+            "type": "IfcPropertyEnumeration",
+            "name": "Architectural Elem.",
+            "enumerationValues": [
+              { "type": "IfcLabel", "value": "Plaster/painted layers (D)" },
+              { "type": "IfcLabel", "value": "Lunettes (S)" },
+              { "type": "IfcLabel", "value": "Web (S)" },
+              { "type": "IfcLabel", "value": "Arch (S)" },
+              { "type": "IfcLabel", "value": "Archivolts (D)" },
+              { "type": "IfcLabel", "value": "Ribs (S)" },
+              { "type": "IfcLabel", "value": "Moulding (D)" }
+            ]
+          },
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "2bWurEq2L96v_u$SShvM6x",
+          "name": "Arches type",
+          "templateType": "P_ENUMERATEDVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "enumerators": {
+            "type": "IfcPropertyEnumeration",
+            "name": "Arches type",
+            "enumerationValues": [
+              { "type": "IfcLabel", "value": "Semi-circular" },
+              { "type": "IfcLabel", "value": "Segmental" },
+              { "type": "IfcLabel", "value": "Pointed" },
+              { "type": "IfcLabel", "value": "Oval" }
+            ]
+          },
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "035wyig2PAhR5r82uaiYza",
+          "name": "Funcionality",
+          "templateType": "P_ENUMERATEDVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "enumerators": {
+            "type": "IfcPropertyEnumeration",
+            "name": "Funcionality",
+            "enumerationValues": [
+              { "type": "IfcLabel", "value": "Structural" },
+              { "type": "IfcLabel", "value": "Decorative" }
+            ]
+          },
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "06nfJfUU115gOdX7_PYNwT",
+          "name": "Profile - Section",
+          "templateType": "P_ENUMERATEDVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "enumerators": {
+            "type": "IfcPropertyEnumeration",
+            "name": "Profile - Section",
+            "enumerationValues": [
+              { "type": "IfcLabel", "value": "Round arch" },
+              { "type": "IfcLabel", "value": "Polycentric" },
+              { "type": "IfcLabel", "value": "Low-rise polycentric" },
+              { "type": "IfcLabel", "value": "Parabolic" }
+            ]
+          },
+          "accessState": "READWRITE"
+        }
+      ]
+    },
+    {
+      "type": "IfcPropertySetTemplate",
+      "globalId": "3uUXppshHBSwa8wWhcr5nq",
+      "name": "BE_Ribs&tiercerons_(E73 Information Object)",
+      "description": "Typological aspects of Ribs and tiercerons",
+      "templateType": "PSET_TYPEDRIVENOVERRIDE",
+      "applicableEntity": "IfcElementAssembly",
+      "hasPropertyTemplates": [
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "1IeRBp4117wgdHtt7qGwuf",
+          "name": "Shape of Rib",
+          "templateType": "P_ENUMERATEDVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "enumerators": {
+            "type": "IfcPropertyEnumeration",
+            "name": "Shape of Rib",
+            "enumerationValues": [
+              { "type": "IfcLabel", "value": "Horizontal" },
+              { "type": "IfcLabel", "value": "Inclined" },
+              { "type": "IfcLabel", "value": "Curve" }
+            ]
+          },
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "0r95NbQ0XCr9MOG5I2wvIi",
+          "name": "Curvature",
+          "templateType": "P_SINGLEVALUE",
+          "primaryMeasureType": "IfcCurvatureMeasure",
+          "accessState": "READWRITE"
+        }
+      ]
+    },
+    {
+      "type": "IfcPropertySetTemplate",
+      "globalId": "19lIOydXb9ae2v$ZafMtkn",
+      "name": "BE_ArchaeologicalAnalysis_(E73 Information Object)",
+      "description": "Archaeological phases. An historical and material description is presented",
+      "templateType": "PSET_OCCURRENCEDRIVEN",
+      "applicableEntity": "IfcElement,IfcSpace",
+      "hasPropertyTemplates": [
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "0I0Tnjp6DFIO42CuQ6PV07",
+          "name": "Phase 01",
+          "templateType": "P_SINGLEVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "2xFuVuqdH7HBahC7lPnZq9",
+          "name": "Phase 02",
+          "templateType": "P_SINGLEVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "1pa3dlAlnA6gxM9l07wMJk",
+          "name": "Phase 03",
+          "templateType": "P_SINGLEVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "3rJff1mb52EPZ9ThKfkWMT",
+          "name": "Phase 04",
+          "templateType": "P_SINGLEVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "2RKXCixpb889sbu9v4n1gL",
+          "name": "Phase 05",
+          "templateType": "P_SINGLEVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "2bkY9q4cj5JeLQICix7QhG",
+          "name": "Phase 06",
+          "templateType": "P_SINGLEVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "1fvR84ojX5q9Ykq7Ixvcmy",
+          "name": "Phase 07",
+          "templateType": "P_SINGLEVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "2TnzfgsB12Ze3s8rshzNd_",
+          "name": "Phase 08",
+          "templateType": "P_SINGLEVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "3PKRVBh1LAuPyF83fUIbBl",
+          "name": "Phase 09",
+          "templateType": "P_SINGLEVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "3Jepa4DIb74gau1Z3s1qZY",
+          "name": "Phase 10",
+          "templateType": "P_SINGLEVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "accessState": "READWRITE"
+        }
+      ]
+    },
+    {
+      "type": "IfcPropertySetTemplate",
+      "globalId": "1mboQY3Ln6PfzZr_qZld9s",
+      "name": "BE_Lunettes_(E73 Information Object)",
+      "templateType": "PSET_TYPEDRIVENOVERRIDE",
+      "applicableEntity": "IfcElement,IfcTypeElement,IfcElementAssembly",
+      "hasPropertyTemplates": [
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "15MJE_UsP4IBxrNzsY6$KC",
+          "name": "Shape of lunette",
+          "templateType": "P_ENUMERATEDVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "enumerators": {
+            "type": "IfcPropertyEnumeration",
+            "name": "Shape of lunette",
+            "enumerationValues": [
+              { "type": "IfcLabel", "value": "Spheroidal" },
+              { "type": "IfcLabel", "value": "Round-Shape" }
+            ]
+          },
+          "accessState": "READWRITE"
+        }
+      ]
+    }
+  ]
+}

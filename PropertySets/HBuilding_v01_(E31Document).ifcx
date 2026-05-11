@@ -1,0 +1,259 @@
+{
+  "type": "ifcJSON",
+  "dataVersion": "1.0.0",
+  "schemaIdentifier": "IFC5",
+  "header": {
+    "description": "ViewDefinition[DesignTransferView]",
+    "implementationLevel": "2;1",
+    "name": "HBuilding_v01_(E31Document).ifcjson",
+    "timeStamp": "2026-02-20T00:00:00+01:00",
+    "author": [],
+    "organization": [],
+    "originatingSystem": "IFC5 Heritage Library"
+  },
+  "schemas": {
+    "bsi::ifc::v5a": {
+      "uri": ""
+    }
+  },
+  "data": [
+    {
+      "type": "IfcPropertySetTemplate",
+      "globalId": "2X8XVwREz58hSul5pTyoat",
+      "name": "HBuilding_DataSheet (E73 information Object)",
+      "templateType": "PSET_OCCURRENCEDRIVEN",
+      "applicableEntity": "IfcBuilding",
+      "hasPropertyTemplates": [
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "1ATr4RKZn4bf5bdkSd4hLP",
+          "name": "ConstructionPeriod (E52 Time-Span)",
+          "templateType": "P_SINGLEVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "2nhRzWUybApvjy33gwHuWG",
+          "name": "CurrentFunction (B6)",
+          "templateType": "P_SINGLEVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "0qmL3x23rEle$rZHezLK$z",
+          "name": "HistoricalBackground (E5 Event)",
+          "templateType": "P_SINGLEVALUE",
+          "primaryMeasureType": "IfcText",
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "1kF1v5lKL9EB2Ul8T8dryE",
+          "name": "HistoricalFunction (B6 Function)",
+          "description": "Based on MIDAS Heritage, Granada Convention, Venice Charter (1964), among others",
+          "templateType": "P_ENUMERATEDVALUE",
+          "primaryMeasureType": "IfcText",
+          "enumerators": {
+            "type": "IfcPropertyEnumeration",
+            "name": "HistoricalFunction (B6 Function)",
+            "enumerationValues": [
+              { "type": "IfcText", "value": "Military (castles, fortresses, barracks)" },
+              { "type": "IfcText", "value": "Residential (Dwellings and palaces)" },
+              { "type": "IfcText", "value": "Religious and Ritual (Temples, churches, mosques)" },
+              { "type": "IfcText", "value": "Public and administrative (Town halls, courthouses)" },
+              { "type": "IfcText", "value": "Commercial and Economic Structures (Markets, banks)" },
+              { "type": "IfcText", "value": "Industrial (Mills, factories, workshops)" },
+              { "type": "IfcText", "value": "Educational and Cultural (schools, libraries, museums, theaters)" },
+              { "type": "IfcText", "value": "Healthcare Facilities (hospitals, asylums, bathhouses)" },
+              { "type": "IfcText", "value": "Transportation and infrastructure (bridges, aqueducts, roads and pathways, harbors and ports)" },
+              { "type": "IfcText", "value": "Funerary and commemorative (tombs and mausoleums, cenotaphs)" },
+              { "type": "IfcText", "value": "Agriculture (barns, granaries, stables)" },
+              { "type": "IfcText", "value": "Recreational and Leisure (baths and thermae, gymnasiums, stadiums)" }
+            ]
+          },
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "1VX1A$TA1CtRmr5oZSBFkK",
+          "name": "MIDAS Heritage Dictionary",
+          "templateType": "P_SINGLEVALUE",
+          "primaryMeasureType": "IfcURIReference",
+          "accessState": "READWRITE"
+        }
+      ]
+    },
+    {
+      "type": "IfcPropertySetTemplate",
+      "globalId": "0BHRd1$Bz9iuoikRp_s5Vr",
+      "name": "HBuilding_MaterialConsistency (E73 information Object)",
+      "templateType": "PSET_OCCURRENCEDRIVEN",
+      "applicableEntity": "IfcBuilding",
+      "hasPropertyTemplates": [
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "31nW4cgFrFSuIuPFh9Vq6L",
+          "name": "A1_Wooden architrave (E57 Material)",
+          "templateType": "P_SINGLEVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "1Y0q6HPdD4BhxDtxbKESsz",
+          "name": "M1_Masonry (E57 Material)",
+          "templateType": "P_SINGLEVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "2wznJ8cx5E5O5D4uJgUhGh",
+          "name": "M2_Masonry (E57 Material)",
+          "templateType": "P_SINGLEVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "3YXRoVL0z8EQJJDbUcpv4E",
+          "name": "ME1_Metallic profile (E57 Material)",
+          "templateType": "P_SINGLEVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "15mDbh6VjCtgyNtweWjfQX",
+          "name": "I1_Gypsum-based plaster (E57 Material)",
+          "templateType": "P_SINGLEVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "2KJttb_9jFkvWPb9xp$P3j",
+          "name": "I2_Marble plaster (E57 Material)",
+          "templateType": "P_SINGLEVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "3wMwAR9zT1ye9vwAtK7Lr2",
+          "name": "B1_Clay tile roofing (E57 Material)",
+          "templateType": "P_SINGLEVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "2mVsBNkQ132eewd5IAo8RC",
+          "name": "B2_Terracotta tile roofing (E57 Material)",
+          "templateType": "P_SINGLEVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "0L0Bc6qzrADPVKHvg4WcY5",
+          "name": "P1_Cesana stone (E57 Material)",
+          "templateType": "P_SINGLEVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "2_Z3P3kyP7O8ZF6agE4DW2",
+          "name": "S1_Gypsum-based stucco (E57 Material)",
+          "templateType": "P_SINGLEVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "3f5Wk1BtXAjBu5HS5H2sjZ",
+          "name": "R_Cementitious patching (E57 Material)",
+          "templateType": "P_SINGLEVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "accessState": "READWRITE"
+        }
+      ]
+    },
+    {
+      "type": "IfcPropertySetTemplate",
+      "globalId": "3KknstMGr04P3WJW9foEmF",
+      "name": "HBuilding_HistoricalAnalysis (E73 information Object)",
+      "templateType": "PSET_TYPEDRIVENOVERRIDE",
+      "applicableEntity": "IfcBuilding",
+      "hasPropertyTemplates": [
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "3abo4_D3j4pAc2DlUrEQML",
+          "name": "Phase 1",
+          "templateType": "P_SINGLEVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "18Wdz$yivFpwhly8aQbvnQ",
+          "name": "Phase 2",
+          "templateType": "P_SINGLEVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "3FZETejW958vSmQdQiFBgJ",
+          "name": "Phase 3",
+          "templateType": "P_SINGLEVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "0M2O95Hhj9MQX$Rrm$eU3q",
+          "name": "Phase 4",
+          "templateType": "P_SINGLEVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "0Z4Sz2$M59KR1pSDqqX15u",
+          "name": "Phase 5",
+          "templateType": "P_SINGLEVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "0PvhovLVbB2AikqIHRM4xG",
+          "name": "Phase 6",
+          "templateType": "P_SINGLEVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "0P7$I0auf1zgrn$gqFVkgJ",
+          "name": "Phase 7",
+          "templateType": "P_SINGLEVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "1_K39ZJOLBtBwjyXYiaFX1",
+          "name": "Phase 8",
+          "templateType": "P_SINGLEVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "accessState": "READWRITE"
+        }
+      ]
+    }
+  ]
+}

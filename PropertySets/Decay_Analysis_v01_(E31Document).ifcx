@@ -1,0 +1,169 @@
+{
+  "type": "ifcJSON",
+  "dataVersion": "1.0.0",
+  "schemaIdentifier": "IFC5",
+  "header": {
+    "description": "ViewDefinition[DesignTransferView]",
+    "implementationLevel": "2;1",
+    "name": "Decay_Analysis_v01_(E31Document).ifcjson",
+    "timeStamp": "2026-02-20T00:00:00+01:00",
+    "author": [],
+    "organization": [],
+    "originatingSystem": "IFC5 Heritage Library"
+  },
+  "schemas": {
+    "bsi::ifc::v5a": {
+      "uri": ""
+    }
+  },
+  "data": [
+    {
+      "type": "IfcPropertySetTemplate",
+      "globalId": "2Gg2Gsjiv6_R3nVb7zG$9E",
+      "name": "Decay - Report (E73 Information Object)",
+      "description": "To be defined",
+      "templateType": "PSET_TYPEDRIVENONLY",
+      "applicableEntity": "IfcSurfaceFeature,IfcSpace",
+      "hasPropertyTemplates": [
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "2qGiKug_z5uhPSxp2UkkF0",
+          "name": "Decay (E3 Condition State)",
+          "description": "P2 has a type (E55)",
+          "templateType": "P_ENUMERATEDVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "enumerators": {
+            "type": "IfcPropertyEnumeration",
+            "name": "Decay (E3 Condition State)",
+            "enumerationValues": [
+              { "type": "IfcLabel", "value": "Discolouration (E55 Type)" },
+              { "type": "IfcLabel", "value": "Gap/Lack (E55 Type)" },
+              { "type": "IfcLabel", "value": "Vegetation (E55 Type)" },
+              { "type": "IfcLabel", "value": "Washout (E55 Type)" },
+              { "type": "IfcLabel", "value": "Invasive Vegetation (E55 Type)" },
+              { "type": "IfcLabel", "value": "Rising Damp Front (E55 Type)" },
+              { "type": "IfcLabel", "value": "Cracking (E55 Type)" },
+              { "type": "IfcLabel", "value": "Erosion and Disintegration (E55 Type)" },
+              { "type": "IfcLabel", "value": "Detachment (E55 Type)" },
+              { "type": "IfcLabel", "value": "Surface Deposition (E55 Type)" },
+              { "type": "IfcLabel", "value": "Dripping (E55 Type)" },
+              { "type": "IfcLabel", "value": "Black Crust (E55 Type)" }
+            ]
+          },
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "3$ZqBuPRXEa9_EMfe3LOh7",
+          "name": "Cause (E5 Event)",
+          "description": "P2 has a type (E55)",
+          "templateType": "P_SINGLEVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "12pDH5hQf9$OVAQg8rWvgA",
+          "name": "Monitoring (E7 Activity)",
+          "description": "P2 has a type (E55)",
+          "templateType": "P_ENUMERATEDVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "enumerators": {
+            "type": "IfcPropertyEnumeration",
+            "name": "Monitoring (E7 Activity)",
+            "enumerationValues": [
+              { "type": "IfcLabel", "value": "Weekly (E55 Type)" },
+              { "type": "IfcLabel", "value": "Monthly (E55 Type)" },
+              { "type": "IfcLabel", "value": "Every 6 Months (E55 Type)" },
+              { "type": "IfcLabel", "value": "Annual (E55 Type)" }
+            ]
+          },
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "3xkGRDowT1EfulnL$8sT0q",
+          "name": "Proficient subject (E21 Person)",
+          "description": "P2 has a type (E55)",
+          "templateType": "P_ENUMERATEDVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "enumerators": {
+            "type": "IfcPropertyEnumeration",
+            "name": "Proficient subject (E21 Person)",
+            "enumerationValues": [
+              { "type": "IfcLabel", "value": "Restoration Architect (E55 Type)" },
+              { "type": "IfcLabel", "value": "Technician (E55 Type)" },
+              { "type": "IfcLabel", "value": "Conservator-Restorer (E55 Type)" }
+            ]
+          },
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "2BphNGKAn6kBMMJMVZLSZz",
+          "name": "Planned actions (E7 Activity)",
+          "description": "P2 has a type (E55)",
+          "templateType": "P_SINGLEVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "3bHEmQKu11k8qk7laSNBIQ",
+          "name": "Suggested interventions (E7 Activity)",
+          "description": "P2 has a type (E55)",
+          "templateType": "P_SINGLEVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "0IX9ULyufDTw1T1HVvOq5T",
+          "name": "Material affected (E57 Material)",
+          "description": "P45 consist of (E57)",
+          "templateType": "P_SINGLEVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "3l0vvNFj9C5AOcV31BvYVg",
+          "name": "Previous Intervention (E11 Modification)",
+          "description": "P2 has a type (E55)",
+          "templateType": "P_SINGLEVALUE",
+          "primaryMeasureType": "IfcDate",
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "2HC3BKBkL4EAnL4AT8rUc1",
+          "name": "Last Intervention Date (E11 Modification)",
+          "description": "P4 has time-spam (E52)",
+          "templateType": "P_SINGLEVALUE",
+          "primaryMeasureType": "IfcDate",
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "3INc6ICob0aADQfZpguuhl",
+          "name": "Affected Building Component (B3 FMBS)",
+          "description": "P2 has a type (E55)",
+          "templateType": "P_ENUMERATEDVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "enumerators": {
+            "type": "IfcPropertyEnumeration",
+            "name": "Affected Building Component (B3 FMBS)",
+            "enumerationValues": [
+              { "type": "IfcLabel", "value": "Finishes (E55 Type)" },
+              { "type": "IfcLabel", "value": "Masonry (E55 Type)" },
+              { "type": "IfcLabel", "value": "Decorative Apparatus (E55 Type)" },
+              { "type": "IfcLabel", "value": "Ground Floor (E55 Type)" },
+              { "type": "IfcLabel", "value": "Roof (E55 Type)" }
+            ]
+          },
+          "accessState": "READWRITE"
+        }
+      ]
+    }
+  ]
+}

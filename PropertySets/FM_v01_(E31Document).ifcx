@@ -1,0 +1,192 @@
+{
+  "type": "ifcJSON",
+  "dataVersion": "1.0.0",
+  "schemaIdentifier": "IFC5",
+  "header": {
+    "description": "ViewDefinition[DesignTransferView]",
+    "implementationLevel": "2;1",
+    "name": "FM_v01_(E31Document).ifcjson",
+    "timeStamp": "2026-02-20T00:00:00+01:00",
+    "author": [],
+    "organization": [],
+    "originatingSystem": "IFC5 Heritage Library"
+  },
+  "schemas": {
+    "bsi::ifc::v5a": {
+      "uri": ""
+    }
+  },
+  "data": [
+    {
+      "type": "IfcPropertySetTemplate",
+      "globalId": "3BSGAmrdH5IeErBSYJ46ZH",
+      "name": "FM_ServantSpace (E73 Information Object)",
+      "description": "Whose can be subdivided into vertical (such as stairs) and horizontal (such as corridors)",
+      "templateType": "PSET_TYPEDRIVENOVERRIDE",
+      "applicableEntity": "IfcSpaceType/USERDEFINED,IfcSpace",
+      "hasPropertyTemplates": [
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "0OxXam_E93KxC6973Gtxvc",
+          "name": "User (E39 Actor)",
+          "templateType": "P_ENUMERATEDVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "enumerators": {
+            "type": "IfcPropertyEnumeration",
+            "name": "User (E39 Actor)",
+            "enumerationValues": [
+              { "type": "IfcLabel", "value": "Actors (E74 Group)" },
+              { "type": "IfcLabel", "value": "Public (E74 Group)" },
+              { "type": "IfcLabel", "value": "Others" }
+            ]
+          },
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "3P35PO7sv2juLHmAakO1xz",
+          "name": "Squared_Meters (E54 Dimension)",
+          "description": "P90 has a value",
+          "templateType": "P_SINGLEVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "05$9Z9Lan5sPDmQEMXe4ac",
+          "name": "ConstructionSystem (E55 Type)",
+          "description": "P2 has a type",
+          "templateType": "P_SINGLEVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "3Vo6NvxDT8kPOpulJSu_2X",
+          "name": "Accessibility (E16 Measurement)",
+          "description": "P40 has a observed dimension",
+          "templateType": "P_SINGLEVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "accessState": "READWRITE"
+        }
+      ]
+    },
+    {
+      "type": "IfcPropertySetTemplate",
+      "globalId": "2p$VIo0$5908QzDEqCzkEd",
+      "name": "FM_ServedSpace (E73 Information Object)",
+      "description": "A property set defining attributes and characteristics of spaces managed for facility operations, including occupancy, accessibility, and structural details",
+      "templateType": "PSET_TYPEDRIVENOVERRIDE",
+      "applicableEntity": "IfcSpaceType,IfcSpace",
+      "hasPropertyTemplates": [
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "0Sj4Ig5$PBX9QkOALvHM0Q",
+          "name": "User (E39 Actor)",
+          "description": "P14 carried out by",
+          "templateType": "P_ENUMERATEDVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "enumerators": {
+            "type": "IfcPropertyEnumeration",
+            "name": "User (E39 Actor)",
+            "enumerationValues": [
+              { "type": "IfcLabel", "value": "Public (E74 Group)" },
+              { "type": "IfcLabel", "value": "Actors (E74 Group)" },
+              { "type": "IfcLabel", "value": "Workers (E74 Group)" }
+            ]
+          },
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "3zJWbmQHjFqA3oE43Kzvgo",
+          "name": "Seating_capacity (E54 Dimension)",
+          "description": "P90 has a value",
+          "templateType": "P_SINGLEVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "1OD5Nsp95CaBzTcvKzqHPz",
+          "name": "Slope/Grade (E54 Dimension)",
+          "description": "P90 has a value",
+          "templateType": "P_SINGLEVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "1$l3VHGdL7LRCDEHAJ1Ivk",
+          "name": "User_accessibility (E16 Measurement)",
+          "description": "P40 observed dimension",
+          "templateType": "P_ENUMERATEDVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "enumerators": {
+            "type": "IfcPropertyEnumeration",
+            "name": "User_accessibility (E16 Measurement)",
+            "enumerationValues": [
+              { "type": "IfcLabel", "value": "High (E54 Dimension)" },
+              { "type": "IfcLabel", "value": "Regular (E54 Dimension)" },
+              { "type": "IfcLabel", "value": "Low (E54 Dimension)" }
+            ]
+          },
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "0azogqxXnDzBIKmeqKGPhp",
+          "name": "Accessibility_for_equipment_storage (E16 Measurement)",
+          "description": "P40 observed dimension",
+          "templateType": "P_ENUMERATEDVALUE",
+          "primaryMeasureType": "IfcText",
+          "enumerators": {
+            "type": "IfcPropertyEnumeration",
+            "name": "Accessibility_for_equipment_storage (E16 Measurement)",
+            "enumerationValues": [
+              { "type": "IfcText", "value": "Yes (E54 Dimension)" },
+              { "type": "IfcText", "value": "No (E54 Dimension)" }
+            ]
+          },
+          "accessState": "READWRITE"
+        },
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "3SOh63VHP8Ig4lt5FCYjcJ",
+          "name": "Construction_System (E55 Type)",
+          "description": "P2 has a type (E55)",
+          "templateType": "P_SINGLEVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "accessState": "READWRITE"
+        }
+      ]
+    },
+    {
+      "type": "IfcPropertySetTemplate",
+      "globalId": "0VXUe0$OzCXP3wdOb4Ydqq",
+      "name": "FM_Plan_Layout",
+      "description": "Geometric footprint of the space that the vault covers",
+      "templateType": "PSET_TYPEDRIVENOVERRIDE",
+      "applicableEntity": "IfcSpace,IfcSpaceType",
+      "hasPropertyTemplates": [
+        {
+          "type": "IfcSimplePropertyTemplate",
+          "globalId": "3mjTiHfrD7EREPYGLTFUPo",
+          "name": "P_Shape",
+          "templateType": "P_ENUMERATEDVALUE",
+          "primaryMeasureType": "IfcLabel",
+          "enumerators": {
+            "type": "IfcPropertyEnumeration",
+            "name": "P_Shape",
+            "enumerationValues": [
+              { "type": "IfcLabel", "value": "Square" },
+              { "type": "IfcLabel", "value": "Rectangular" },
+              { "type": "IfcLabel", "value": "Trapezoidal" }
+            ]
+          },
+          "accessState": "READWRITE"
+        }
+      ]
+    }
+  ]
+}
