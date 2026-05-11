@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IFC Metadata Schema Browser</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <div class="title">IFC Metadata Schema Browser</div>
+        <div class="subtitle">A clearer way to read and understand the IFC metadata schema</div>
+      </div>
+
+      <div class="controls">
+        <input id="search" type="search" placeholder="Search class (e.g., IfcSpace)..." />
+        <button id="resetBtn" title="Reset to roots">Reset</button>
+      </div>
+    </header>
+
+    <div class="appLayout">
+      <div class="appContent">
+        <main class="treeViewContainer" id="treeView">
+          <div class="tree-toolbar">
+            <button id="toggleAllBtn" class="tree-toggle-btn">Expand All</button>
+          </div>
+          <div class="treeContent" id="treeContent"></div>
+        </main>
+      </div>
+
+      <aside class="inspector">
+        <div class="panel">
+          <div class="panelTitle">Metadata</div>
+          <div id="inspectorContent" class="panelBody muted">Click a class to see metadata.</div>
+        </div>
+
+        <div class="panel">
+          <div class="panelTitle">Schema info</div>
+          <div id="schemaInfo" class="panelBody muted"></div>
+        </div>
+
+        <div class="panel">
+          <div class="panelTitle">How to extend</div>
+          <div class="panelBody muted">
+            Add fields in <code>schema.json</code> nodes (e.g., <code>attributes</code>, <code>constraints</code>,
+            <code>source</code>). This metadata schema is a short version of the official one provided by bSI.
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

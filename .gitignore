@@ -1,0 +1,11 @@
+# OS artifacts
+Thumbs.db
+ehthumbs.db
+desktop.ini
+.DS_Store
+
+# BIM software backups / temp files
+*.bak
+*.tmp
+*.temp
+~$*

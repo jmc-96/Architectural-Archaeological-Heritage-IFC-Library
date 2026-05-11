@@ -1,0 +1,253 @@
+{
+  "meta": {
+    "name": "IFC Class Browser (subset)",
+    "schema": "IFC 4.3.2.0 (IFC4X3_ADD2)",
+    "version": "0.1.0"
+  },
+  "roots": ["IfcRoot"],
+  "nodes": [
+    {
+      "id": "IfcRoot",
+      "label": "IfcRoot",
+      "kind": "abstract",
+      "description": "Root for most persistent IFC entities (GlobalId, OwnerHistory, Name, Description).",
+      "url": "https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcRoot.htm",
+      "children": ["IfcObjectDefinition", "IfcPropertyDefinition", "IfcRelationship"]
+    },
+
+    {
+      "id": "IfcObjectDefinition",
+      "label": "IfcObjectDefinition",
+      "kind": "abstract",
+      "url": "https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcObjectDefinition.htm",
+      "children": ["IfcObject"]
+    },
+    {
+      "id": "IfcObject",
+      "label": "IfcObject",
+      "kind": "abstract",
+      "url": "https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcObject.htm",
+      "children": ["IfcProduct", "IfcProcess"]
+    },
+    {
+      "id": "IfcProduct",
+      "label": "IfcProduct",
+      "kind": "abstract",
+      "url": "https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcProduct.htm",
+      "children": ["IfcSpatialElement", "IfcElement"]
+    },
+    {
+      "id": "IfcProcess",
+      "label": "IfcProcess",
+      "kind": "abstract",
+      "url": "https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcProcess.htm",
+      "children": ["IfcEvent", "IfcProcedure", "IfcTask"]
+    },
+    {
+      "id": "IfcEvent",
+      "label": "IfcEvent",
+      "kind": "entity",
+      "url": "https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcEvent.htm",
+      "children": []
+    },
+    {
+      "id": "IfcProcedure",
+      "label": "IfcProcedure",
+      "kind": "entity",
+      "url": "https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcProcedure.htm",
+      "children": []
+    },
+    {
+      "id": "IfcTask",
+      "label": "IfcTask",
+      "kind": "entity",
+      "url": "https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcTask.htm",
+      "children": []
+    },
+
+    {
+      "id": "IfcSpatialElement",
+      "label": "IfcSpatialElement",
+      "kind": "abstract",
+      "url": "https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcSpatialElement.htm",
+      "children": ["IfcSpatialStructureElement", "IfcSpatialZone"]
+    },
+    {
+      "id": "IfcSpatialStructureElement",
+      "label": "IfcSpatialStructureElement",
+      "kind": "abstract",
+      "url": "https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcSpatialStructureElement.htm",
+      "children": ["IfcSite", "IfcFacility", "IfcFacilityPart", "IfcSpace"]
+    },
+    {
+      "id": "IfcFacility",
+      "label": "IfcFacility",
+      "kind": "abstract",
+      "url": "https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcFacility.htm",
+      "children": ["IfcBuilding"]
+    },
+    {
+      "id": "IfcBuilding",
+      "label": "IfcBuilding",
+      "kind": "entity",
+      "url": "https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcBuilding.htm",
+      "children": []
+    },
+    {
+      "id": "IfcFacilityPart",
+      "label": "IfcFacilityPart",
+      "kind": "abstract",
+      "url": "https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcFacilityPart.htm",
+      "children": ["IfcBuildingStorey"]
+    },
+    {
+      "id": "IfcBuildingStorey",
+      "label": "IfcBuildingStorey",
+      "kind": "entity",
+      "url": "https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcBuildingStorey.htm",
+      "children": []
+    },
+    {
+      "id": "IfcSite",
+      "label": "IfcSite",
+      "kind": "entity",
+      "url": "https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcSite.htm",
+      "children": []
+    },
+    {
+      "id": "IfcSpace",
+      "label": "IfcSpace",
+      "kind": "entity",
+      "url": "https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcSpace.htm",
+      "children": []
+    },
+    {
+      "id": "IfcSpatialZone",
+      "label": "IfcSpatialZone",
+      "kind": "entity",
+      "url": "https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcSpatialZone.htm",
+      "children": []
+    },
+
+    {
+      "id": "IfcElement",
+      "label": "IfcElement",
+      "kind": "abstract",
+      "url": "https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcElement.htm",
+      "children": ["IfcBuildingElement", "IfcElementAssembly", "IfcFeatureElement"]
+    },
+    {
+      "id": "IfcBuildingElement",
+      "label": "IfcBuildingElement",
+      "kind": "abstract",
+      "url": "https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcBuildingElement.htm",
+      "children": ["IfcWall", "IfcColumn", "IfcSlab", "IfcRoof", "IfcBeam"]
+    },
+    {
+      "id": "IfcWall",
+      "label": "IfcWall",
+      "kind": "entity",
+      "description": "Vertical construction element that bounds or subdivides spaces.",
+      "url": "https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcWall.htm",
+      "children": []
+    },
+    {
+      "id": "IfcColumn",
+      "label": "IfcColumn",
+      "kind": "entity",
+      "description": "Vertical structural member that transmits loads to a foundation.",
+      "url": "https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcColumn.htm",
+      "children": []
+    },
+    {
+      "id": "IfcSlab",
+      "label": "IfcSlab",
+      "kind": "entity",
+      "description": "Horizontal construction element (floor, roof slab, landing, etc.).",
+      "url": "https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcSlab.htm",
+      "children": []
+    },
+    {
+      "id": "IfcRoof",
+      "label": "IfcRoof",
+      "kind": "entity",
+      "description": "Construction element that protects the building from weather at the top.",
+      "url": "https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcRoof.htm",
+      "children": []
+    },
+    {
+      "id": "IfcBeam",
+      "label": "IfcBeam",
+      "kind": "entity",
+      "description": "Horizontal or inclined structural member that carries loads primarily by bending.",
+      "url": "https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcBeam.htm",
+      "children": []
+    },
+    {
+      "id": "IfcElementAssembly",
+      "label": "IfcElementAssembly",
+      "kind": "abstract",
+      "url": "https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcElementAssembly.htm",
+      "children": []
+    },
+    {
+      "id": "IfcFeatureElement",
+      "label": "IfcFeatureElement",
+      "kind": "abstract",
+      "url": "https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcFeatureElement.htm",
+      "children": []
+    },
+
+    {
+      "id": "IfcPropertyDefinition",
+      "label": "IfcPropertyDefinition",
+      "kind": "abstract",
+      "description": "Superclass for property-related definitions (property sets, quantity sets, etc.).",
+      "url": "https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcPropertyDefinition.htm",
+      "children": ["IfcPropertySetDefinition", "IfcPropertyTemplateDefinition"]
+    },
+    {
+      "id": "IfcPropertySetDefinition",
+      "label": "IfcPropertySetDefinition",
+      "kind": "abstract",
+      "url": "https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcPropertySetDefinition.htm",
+      "children": ["IfcPredefinedPropertySet", "IfcPropertySet", "IfcQuantitySet"]
+    },
+    {
+      "id": "IfcPredefinedPropertySet",
+      "label": "IfcPredefinedPropertySet",
+      "kind": "entity",
+      "url": "https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcPredefinedPropertySet.htm",
+      "children": []
+    },
+    {
+      "id": "IfcPropertySet",
+      "label": "IfcPropertySet",
+      "kind": "entity",
+      "url": "https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcPropertySet.htm",
+      "children": []
+    },
+    {
+      "id": "IfcQuantitySet",
+      "label": "IfcQuantitySet",
+      "kind": "entity",
+      "url": "https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcQuantitySet.htm",
+      "children": []
+    },
+    {
+      "id": "IfcPropertyTemplateDefinition",
+      "label": "IfcPropertyTemplateDefinition",
+      "kind": "abstract",
+      "url": "https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcPropertyTemplateDefinition.htm",
+      "children": ["IfcPropertySetTemplate", "IfcPropertyTemplate"]
+    },
+    {
+      "id": "IfcRelationship",
+      "label": "IfcRelationship",
+      "kind": "abstract",
+      "description": "Superclass for IFC relationship entities (e.g., decomposition, assignment, connectivity).",
+      "url": "https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/lexical/IfcRelationship.htm",
+      "children": []
+    }
+  ]
+}

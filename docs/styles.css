@@ -1,0 +1,402 @@
+:root {
+  --bg: #0b0f17;
+  --panel: #121a27;
+  --panel2: #0f1622;
+  --text: #e8eefc;
+  --muted: #a8b3cf;
+  --border: rgba(255,255,255,0.10);
+  --hover: rgba(255,255,255,0.06);
+  --accent: #3b82f6;
+  --chip: rgba(59,130,246,0.18);
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  color: var(--text);
+  background: radial-gradient(1200px 700px at 20% 0%, #121f3a 0%, var(--bg) 55%);
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--border);
+  background: rgba(11,15,23,0.78);
+  backdrop-filter: blur(10px);
+}
+
+.brand .title { font-weight: 700; font-size: 16px; letter-spacing: 0.2px; }
+.brand .subtitle { font-size: 12px; color: var(--muted); margin-top: 2px; }
+
+.controls { display: flex; gap: 10px; align-items: center; }
+.controls input {
+  width: min(420px, 52vw);
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--panel2);
+  color: var(--text);
+  outline: none;
+}
+.controls input:focus { border-color: rgba(59,130,246,0.6); }
+
+.controls button {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  color: var(--text);
+  cursor: pointer;
+}
+.controls button:hover { background: rgba(255,255,255,0.05); }
+
+/* ───── App-level layout: content + inspector sidebar ───── */
+.appLayout {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 14px;
+  padding: 14px;
+}
+
+@media (max-width: 980px) {
+  .appLayout { grid-template-columns: 1fr; }
+}
+
+.appContent {
+  min-width: 0;
+}
+
+.hidden { display: none !important; }
+
+/* ───── Inspector sidebar ───── */
+.inspector {
+  position: sticky;
+  top: 70px;
+  align-self: start;
+}
+.inspector .panel {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: rgba(18,26,39,0.55);
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+.panelTitle {
+  padding: 12px;
+  border-bottom: 1px solid var(--border);
+  background: rgba(15,22,34,0.65);
+  font-weight: 650;
+}
+.panelBody { padding: 12px; font-size: 13px; line-height: 1.45; }
+.muted { color: var(--muted); }
+code { color: #cfe1ff; }
+
+.kchip {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.04);
+  color: var(--muted);
+  font-size: 12px;
+  margin-left: 8px;
+}
+
+.badge {
+  font-size: 12px;
+  padding: 2px 8px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(255,255,255,0.04);
+  color: var(--muted);
+}
+
+.pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+  background: rgba(0,0,0,0.25);
+  border: 1px solid var(--border);
+  padding: 10px;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+/* ───── Tree View ───── */
+.treeViewContainer {
+  padding: 18px;
+  background: #ffffff;
+  border-radius: 14px;
+}
+
+.tree-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.tree-toggle-btn {
+  padding: 8px 18px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: 1px solid rgba(0,0,0,0.15);
+  background: #f3f4f6;
+  color: #1a1e27;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.tree-toggle-btn:hover {
+  background: #e5e7eb;
+}
+
+.treeContent {
+  border: 1px solid rgba(0,0,0,0.10);
+  border-radius: 14px;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+/* Each tree row */
+.tree-row {
+  display: flex;
+  align-items: stretch;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+.tree-row:last-child { border-bottom: none; }
+
+/* Indent guides area */
+.tree-guides {
+  display: flex;
+  flex-shrink: 0;
+}
+
+/* Each guide segment (vertical/corner line area) */
+.tree-guide {
+  position: relative;
+  width: 28px;
+  min-height: 100%;
+}
+/* Vertical continuation line */
+.tree-guide.line::before {
+  content: "";
+  position: absolute;
+  left: 13px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: rgba(0,0,0,0.18);
+}
+/* L-corner (last child) */
+.tree-guide.corner::before {
+  content: "";
+  position: absolute;
+  left: 13px;
+  top: 0;
+  height: 50%;
+  width: 1px;
+  background: rgba(0,0,0,0.18);
+}
+.tree-guide.corner::after {
+  content: "";
+  position: absolute;
+  left: 13px;
+  top: 50%;
+  width: 14px;
+  height: 1px;
+  background: rgba(0,0,0,0.18);
+}
+/* T-branch (non-last child) */
+.tree-guide.branch::before {
+  content: "";
+  position: absolute;
+  left: 13px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: rgba(0,0,0,0.18);
+}
+.tree-guide.branch::after {
+  content: "";
+  position: absolute;
+  left: 13px;
+  top: 50%;
+  width: 14px;
+  height: 1px;
+  background: rgba(0,0,0,0.18);
+}
+
+/* The bar (label area) */
+.tree-bar {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 9px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  min-height: 38px;
+  cursor: default;
+  transition: opacity 0.12s;
+  border-radius: 4px;
+  margin: 2px 6px 2px 0;
+}
+.tree-bar:hover { opacity: 0.85; }
+
+/* Highlighted bar: search match (orange) */
+.tree-bar.bar-highlight {
+  background: #f97316;
+  color: #fff;
+  box-shadow: 0 0 0 2px rgba(249,115,22,0.35);
+}
+
+/* Selected bar: clicked node (outline) */
+.tree-bar.bar-selected {
+  box-shadow: 0 0 0 2px var(--accent);
+}
+
+/* Root bar: accent blue */
+.tree-bar.bar-root {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* Dark bar: abstract classes */
+.tree-bar.bar-dark {
+  background: #2a2f3a;
+  color: #d0d6e2;
+}
+
+/* Light bar: concrete entity classes */
+.tree-bar.bar-light {
+  background: #c8cdd6;
+  color: #1a1e27;
+}
+
+.tree-bar.clickable {
+  cursor: pointer;
+}
+.tree-bar.clickable:hover {
+  opacity: 0.82;
+}
+
+.tree-chevron {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  font-size: 10px;
+  margin-right: 6px;
+  transition: transform 0.18s ease;
+  flex-shrink: 0;
+}
+.tree-chevron.open {
+  transform: rotate(90deg);
+}
+
+.tree-bar .bar-label {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ───── Tree-mode: white page theme (always active) ───── */
+body.tree-mode {
+  background: #ffffff;
+  color: #1a1e27;
+  transition: background 0.25s, color 0.25s;
+}
+
+body.tree-mode .topbar {
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(10px);
+  border-bottom-color: rgba(0,0,0,0.10);
+}
+body.tree-mode .brand .title { color: #1a1e27; }
+body.tree-mode .brand .subtitle { color: #5a6478; }
+
+body.tree-mode .controls input {
+  background: #f3f4f6;
+  border-color: rgba(0,0,0,0.12);
+  color: #1a1e27;
+}
+body.tree-mode .controls input::placeholder { color: #8892a4; }
+body.tree-mode .controls input:focus { border-color: var(--accent); }
+
+body.tree-mode .controls button {
+  background: #f3f4f6;
+  border-color: rgba(0,0,0,0.12);
+  color: #1a1e27;
+}
+body.tree-mode .controls button:hover { background: #e5e7eb; }
+
+body.tree-mode .inspector .panel {
+  background: #ffffff;
+  border-color: rgba(0,0,0,0.10);
+}
+body.tree-mode .panelTitle {
+  background: #f3f4f6;
+  border-bottom-color: rgba(0,0,0,0.10);
+  color: #1a1e27;
+}
+body.tree-mode .panelBody {
+  color: #3a4050;
+}
+body.tree-mode .panelBody.muted {
+  color: #5a6478;
+}
+body.tree-mode .panelBody code {
+  color: #2563eb;
+}
+body.tree-mode .pre {
+  background: #f3f4f6;
+  border-color: rgba(0,0,0,0.10);
+  color: #1a1e27;
+}
+body.tree-mode .kchip {
+  background: #f3f4f6;
+  border-color: rgba(0,0,0,0.12);
+  color: #5a6478;
+}
+body.tree-mode .badge {
+  background: #f3f4f6;
+  border-color: rgba(0,0,0,0.12);
+  color: #5a6478;
+}
+
+/* ───── Doc link ───── */
+.doc-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(59,130,246,0.35);
+  background: rgba(59,130,246,0.10);
+  color: #60a5fa;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.15s, border-color 0.15s;
+}
+.doc-link:hover {
+  background: rgba(59,130,246,0.20);
+  border-color: rgba(59,130,246,0.55);
+  color: #93bbfc;
+}
+
+body.tree-mode .doc-link {
+  color: var(--accent);
+  border-color: rgba(59,130,246,0.30);
+  background: rgba(59,130,246,0.08);
+}
+body.tree-mode .doc-link:hover {
+  background: rgba(59,130,246,0.15);
+  color: #2563eb;
+}
